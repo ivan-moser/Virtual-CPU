@@ -11,7 +11,7 @@ void execute(instruction_t instruction, VM* vm){
     case 1:
         vm->v[instruction_reg] = instruction_value;
         printf("\nPC->%d  MOVE %d, %d;",vm->pc, instruction_reg, instruction_value);
-        
+
         vm->pc += 2;
         break;
     
@@ -23,7 +23,7 @@ void execute(instruction_t instruction, VM* vm){
         break;
     
     case 3:
-        if(instruction_value % 2 == 0){
+        if((instruction_value % 2 == 0) && instruction_value < vm->program_size){
             printf("\nPC->%d  JUMP %d;",vm->pc, instruction_value);
             vm->pc = instruction_value;
         } else {

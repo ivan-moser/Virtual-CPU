@@ -12,9 +12,10 @@ typedef enum {
 }opcode;
 
 typedef struct {
-    uint16_t memory[256];
+    uint8_t memory[256];
     uint16_t v[4];
     uint16_t pc;
+    uint16_t program_size;
 
     bool running;
 } VM;

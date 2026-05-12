@@ -9,4 +9,5 @@ uint16_t fetch(VM* vm, uint16_t pc){
     printf("\nRaw instruction => 0x%x", raw_instruction);
 
     return raw_instruction;
+
 } 
