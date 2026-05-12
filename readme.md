@@ -16,10 +16,10 @@
 *Byte structure (MOVE / ADD):*
 
 First byte => Instruction.
-Second byte => First nebble is the register, second one the value
+Second byte => First nebble is the vm_register, second one the value
 
 ====================================================================+
-MOVE v2, 5               <--- Move 5 to the second register!        |
+MOVE v2, 5               <--- Move 5 to the second vm_register!        |
 0b 0000 0001 0010 0101      <---                                    |
 0x 0125                                                             |
 ====================================================================+

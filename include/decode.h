@@ -5,7 +5,7 @@
 
 typedef struct {
     uint16_t opcode;
-    uint16_t operand;
+    uint16_t vm_register;
     uint16_t value;
 } instruction_t;
 
